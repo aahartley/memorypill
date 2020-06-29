@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="reset">reset</string>
+    <string name="reset1">Reset</string>
+</resources>
