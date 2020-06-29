@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         prefs = getSharedPreferences(PREFS_KEY, Context.MODE_PRIVATE);
 
 
-
+        notificaitons();
 
 
         boolean first = prefs.getBoolean("first", true);
@@ -111,6 +111,11 @@ public class MainActivity extends AppCompatActivity {
                 prefs.edit().putBoolean(BUTTON_PRESSED, false).apply();
                 prefs.edit().putBoolean(BUTTON_PRESSED2, false).apply();
             }
+    }
+
+    public void notificaitons(){
+
+
     }
 
 
