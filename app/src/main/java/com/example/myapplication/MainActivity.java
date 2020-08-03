@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.view.View;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         prefs = getSharedPreferences(PREFS_KEY, Context.MODE_PRIVATE);
 
 
@@ -40,12 +42,13 @@ public class MainActivity extends AppCompatActivity {
             prefs.edit().putBoolean("first", false).apply();
 
         }
-        start();
 
 
 
         }
-        public void start(){
+   // start();
+
+    public void start(){
             final Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
             final Button btn = findViewById(R.id.btnMorn);
